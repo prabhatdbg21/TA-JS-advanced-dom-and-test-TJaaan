@@ -5,17 +5,18 @@ html {
     margin: 0;
 }
 
-#matrix {
+ul {
     width: 800px;
     margin: auto;
     overflow: auto;
     text-align: justify;
 }
-#matrix p {
-    font-size: 30px;
+li {
+    font-size: 45px;
+    padding: 35px 0;
 }
-#matrix span {
-    padding-bottom: 70px;
+cite {
+    font-size: 35px;
 }
 
 #arrowTop {
