@@ -57,33 +57,31 @@ html{
     positon: relative;
 }
 
-h1 {
+header {
     background-Color: black;
     color: white;
     text-align: center;
     font-size: 2.5rem;
     padding: 10px;
 }
-.main-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+ul {
     padding: 1rem;
+    
 }
-.sub-div {
+li {
     padding: 1rem;
     border: 1px solid black ;
-    width: 48%;
+    width: 38%;
     background-Color: #ee6c52;
     margin-bottom: 1rem;
 }
-.sub-div h2{
+li p{
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: underline;
     margin-bottom: 1rem;
 }
-.sub-div p {
+li h2 {
     font-size: 2rem;
     font-weight: 600;
 }
