@@ -61,6 +61,8 @@ h1{
     color: white;
     font-size: 50px;
     font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 .adder {
     position: relative;
@@ -94,6 +96,7 @@ span {
     transition: all 200ms;
     color: white;
     will-change: transform;
+    padding: 0 20px;
 }
 span:hover{
     transform: rotate(180deg);
