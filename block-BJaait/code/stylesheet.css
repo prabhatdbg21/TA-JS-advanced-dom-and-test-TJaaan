@@ -87,55 +87,57 @@ h1{
 }
 span {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
     font-size: 30px;
     font-weight: 800;
     line-height: 1.8;
-    cursor: pointer;
-    transition: all 200ms;
+    transition: all 200ms;    /* Time for rotaition of + */
     color: white;
-    will-change: transform;
-    padding: 0 20px;
+    /* will-change: transform; */
 }
 span:hover{
-    transform: rotate(180deg);
+    transform: rotate(180deg); /* deg by witch + rotate */
 }
 ul {
     padding: 0px;
 }
 .draggable {
-    will-change: transform;
     font-weight: 800;
     height: 50px;
-    list-style-type: none;
     margin: 10px;
     background-color: white;
     color: #0072ff;
     width: 250px;
     line-height: 3.2;
     padding-left: 10px;
-    cursor: move;
-    transition: all 200ms;
-    user-select: none;
     margin: 10px auto;
     position: relative;
+    /* 
+    will-change: transform;
+    list-style-type: none;
+    cursor: move;
+    transition: all 200ms;
+    user-select: none; 
+    */
 }
 .draggable::after {
     content: 'drag me';
     right: 7px;
     font-size: 10px;
     position: absolute;
-    cursor: pointer;
     line-height: 5;
+    transform: translateX(120%); /* on moving curser to box `drag me` apper */
+    opacity: 0;
+    /*
+    cursor: pointer;
     transition: all 200ms;
     transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.50);
-    transform: translateX(120%);
-    opacity: 0;
+    */
 }
 .draggable:hover::after {
+    transform: translate(0); /* on moving curser to box `drag me` apper */
     opacity: 1;
-    transform: translate(0);
 }
 .over {
     transform: scale(1.1, 1.1);

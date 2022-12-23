@@ -56,6 +56,7 @@ var listItens = document.querySelectorAll('.draggable');
 function addNewItem() {
   var newItem = document.querySelector('.input').value;
   if (newItem != '') {
+    /* <li class="draggable" draggable="true">JavaScript</li> */
     document.querySelector('.input').value = '';
     var li = document.createElement('li');
     var attr = document.createAttribute('draggable');
