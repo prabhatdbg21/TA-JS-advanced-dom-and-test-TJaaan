@@ -1,4 +1,3 @@
-const { not } = require('micromatch');
 const functions = require('./index');
 
 test(`test getFullName function`, () => {
