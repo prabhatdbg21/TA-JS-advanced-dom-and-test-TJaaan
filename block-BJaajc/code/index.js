@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
-/* eslint-disable no-undef */
+
 function getFullName(firstName, lastName) {
-  fullName = `${firstName} ${lastName}`;
+  const fullName = `${firstName} ${lastName}`;
   return fullName;
 }
 
